@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="BudgetCop.EntryAddPage" BackgroundColor="#e0e0e0"
+	Title="New Entry" Icon="ic_account_circle.png">
+		<ContentPage.Content>
+			<Grid>
+				  <Grid.RowDefinitions>
+					<RowDefinition Height="1.5*" />
+				    <RowDefinition Height="*" />
+				    <RowDefinition Height="*" />
+				    <RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="1.5*" />
+				  </Grid.RowDefinitions>
+				  <Grid.ColumnDefinitions>
+				    <ColumnDefinition Width="0.1*" />
+				    <ColumnDefinition Width="2*" />
+					<ColumnDefinition Width="0.1*" />
+				  </Grid.ColumnDefinitions>
+
+				<Label Text="New Entry" 
+						Grid.Row="0" 
+						Grid.Column="1"
+						FontSize="30"
+						Margin="0,0,0,10"
+						HorizontalOptions="Start"
+						VerticalOptions="End"/>
+
+				<Picker Grid.Row="1" Grid.Column="1" Title="Entry Type"
+						 Style="{StaticResource EntryStyle}">
+					<Picker.Items>
+						<x:String>Expense</x:String>
+						<x:String>Income</x:String>
+					</Picker.Items>
+				</Picker>
+				<Entry Grid.Row="2" Grid.Column="1" 
+						Placeholder="Amount" 
+						Style="{StaticResource EntryStyle}"/>
+				<Picker Grid.Row="3" Grid.Column="1" 
+						Title="Payment method"
+						 Style="{StaticResource EntryStyle}">
+					<Picker.Items>
+						<x:String>Cash</x:String>
+						<x:String>Card</x:String>
+					</Picker.Items>
+				</Picker>
+				<Entry Grid.Row="4" Grid.Column="1" 
+						Placeholder="Category"
+						Style="{StaticResource EntryStyle}"/>
+				<DatePicker Grid.Row="5" Grid.Column="1" 
+
+						 Style="{StaticResource EntryStyle}"
+							Format="dd/MM/yyyy"/>
+				<Entry Grid.Row="6" Grid.Column="1" 
+						Placeholder="Description"
+						Style="{StaticResource EntryStyle}"/>
+
+
+
+			<StackLayout Orientation="Vertical" 
+				 Grid.Row="7" HorizontalOptions="Fill"
+				Grid.Column="1">
+				<Button BackgroundColor="Green" 
+						TextColor="Black" 
+						Text="Submit"
+						/>
+				<Button BackgroundColor="Olive" 
+						TextColor="Black" 
+						Text="Cancel"
+						/>
+			</StackLayout>
+
+				
+				</Grid>
+		</ContentPage.Content>
+</ContentPage>
