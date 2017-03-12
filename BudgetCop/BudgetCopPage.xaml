@@ -1,4 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:BudgetCop" x:Class="BudgetCop.BudgetCopPage">
-	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
-</ContentPage>
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:BudgetCop" 
+	x:Class="BudgetCop.BudgetCopPage">
+	<local:EntryAddPage></local:EntryAddPage>
+	<local:StatisticsPage></local:StatisticsPage>
+	<local:AccountPage></local:AccountPage>
+	<local:SettingsPage></local:SettingsPage>
+</TabbedPage>

@@ -2,7 +2,7 @@
 
 namespace BudgetCop
 {
-	public partial class BudgetCopPage : ContentPage
+	public partial class BudgetCopPage : TabbedPage
 	{
 		public BudgetCopPage()
 		{
